@@ -18,8 +18,9 @@ const RepoDetail = (props) => {
              <style jsx>
                 {`
                 .repo-content {
+                    
                     margin:5px 5px 10px 10px;
-                    flex-basis:400px;
+                    flex-basis:200x;
                     background-color: #333;
                     color:#fff;
                     border-radius: 4px;
@@ -29,6 +30,7 @@ const RepoDetail = (props) => {
                 .repos-footer {
                     display:flex;
                     flex-wrap:nowrap;
+                    
                 }
                 `}
             </style>

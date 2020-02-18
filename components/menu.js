@@ -7,8 +7,6 @@ const Menu = () => {
         useEffect(() => {
             setNumberofRepos(context.length);
         }, [context.length]);
-
-        console.log('menu repos.length',numberOfRepos)
             return (
                 <div className='menu-container'>
                    

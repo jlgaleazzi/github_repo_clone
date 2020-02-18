@@ -8,13 +8,16 @@ const RepoRenderer = (props) => {
              {props.repo.description}
             </div>
             <div className='repo-footer'>
-                <div><div className='lang-circle'></div>{props.repo.language}</div>
+            {props.repo.language !== null ?  <div><div className='lang-circle'></div>&nbsp;{props.repo.language}</div>: ''}
                 <div>{props.repo.stargazers_count}</div>
                 <div>{props.repo.forks_count}</div>
             </div>
             <style jsx>
                 {`
                 .repo-content {
+                    display:flex;
+                    flex-direction:column;
+                    height:100px;
                     margin:5px 5px 10px 10px;
                     flex-basis:400px;
                     background-color: #333;
@@ -22,12 +25,17 @@ const RepoRenderer = (props) => {
                     border-radius: 4px;
                     border:1px solid #444; 
                     padding:10px;
+                    justify-content:flex-end;
+                    
+                }
+                .repo-content div {
+                    margin-top:5px;
                 }
                 .repo-footer {
                     display:flex;
                     flex-wrap:nowrap;
                 }
-                .repo-footer div {
+                .repo-footer div { 
                     padding-right:10px;
                 }
                 .lang-circle {
