@@ -27,17 +27,31 @@ useEffect(() => {
 return (
   
     <reposContext.Provider value={gitHubData} >
-        <Menu/>
-        <div>{pageToShow(pageName)}</div>
+       <Menu/>
+        <div className='main-cont'>{pageToShow(pageName)}</div>
+        
         <style jsx global> 
         {`
         body {
-            background-color:#222;
+            background-color:#15161b;
+            color:#fff;
             font-family: -apple-system,BlinkMacSystemFont,Segoe UI,Helvetica,Arial,sans-serif,Apple Color Emoji,Segoe UI Emoji;
         }
         `}
         </style>
+        <style jsx>
+            {`
+            .main-cont {
+                margin:auto;
+                width:80%;
+                top:0;
+                left:0;
+                right:0;
+            }
+            `}
+        </style>
     </reposContext.Provider>
+ 
         )  
 };
 

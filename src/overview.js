@@ -12,7 +12,7 @@ const Overview = () => {
     )
     return (
         <div>
-            <div>
+            <div className='title'>
                 Popular repositories
             </div>
             <div className='repos-container'>
@@ -24,6 +24,10 @@ const Overview = () => {
                 display:flex;
                 flex-wrap:wrap;
                 padding:20px;
+            }
+            .title {
+                padding-top:30px;
+                padding-left:30px;
             }
             `}
         </style>
