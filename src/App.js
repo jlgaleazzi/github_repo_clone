@@ -17,7 +17,8 @@ const [gitHubData,setGitHubData] = useState([]);
 useEffect(() => {
     console.log('fetchData useFFect()')
     const fetchData = async () => {
-        const result = await axios('http://localhost:4000/repos/',);
+        //const result = await axios('http://localhost:4000/repos/',);
+        const result = await axios('https://api.github.com/users/octocat/repos',);
         setGitHubData(result.data);
     };
     fetchData();

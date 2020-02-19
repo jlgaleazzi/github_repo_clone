@@ -1,4 +1,5 @@
-import Octicon, {Star,RepoForked } from '@primer/octicons-react';
+import Octicon, {Star,RepoForked,Law } from '@primer/octicons-react';
+import Moment from 'moment';
 const RepoDetail = (props) => { 
     return (
         <div className='repo-content'>
@@ -13,8 +14,8 @@ const RepoDetail = (props) => {
              {props.repo.language !== null ? <div><div className='lang-circle'></div>&nbsp;{props.repo.language}&nbsp;</div>: ''}
                  <div><Octicon icon={Star}/>&nbsp;{props.repo.stargazers_count}&nbsp;</div>
                  <div><Octicon icon={RepoForked}/>&nbsp; {props.repo.forks_count}&nbsp;</div>
-                 {props.repo.license !== null ? <div>{props.repo.license.name}</div>: ''}
-                 <div>{props.repo.updated_at}</div>
+                 {props.repo.license !== null ? <div><Octicon icon={Law}/>&nbsp;{props.repo.license.name}</div>: ''}
+                 <div>&nbsp;&nbsp;{Moment(props.repo.updated_at,'YYYYMMDD').fromNow()}</div>
              </div>
              <style jsx>
                 {`
