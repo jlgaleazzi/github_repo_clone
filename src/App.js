@@ -1,4 +1,4 @@
-import React ,{useEffect, useState, Component} from "react"
+import React ,{useEffect, useState} from "react";
 import Overview from "./overview"
 import Repositories from './repositories' 
 import Menu from '../components/menu'
