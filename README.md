@@ -17,7 +17,7 @@ to run locally you must have [Node.js](https://nodejs.org/en/) v10
 
 -- Local installation
 
-Clone the repo: `git clone https://github.com/jlgaleazzi/cylance.git`
+Clone the repo: `https://github.com/jlgaleazzi/github_repo_clone.git`
 
 go to your local repository
 
