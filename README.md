@@ -1,4 +1,4 @@
-# Cylance Frontend Assessment - React
+# github front end mockup- React
 
 A simple github Mockup App that retrieves repo information from the github api, with searching capabilities of the loaded repos.
 (https://api.github.com/users/octocat/repos)
